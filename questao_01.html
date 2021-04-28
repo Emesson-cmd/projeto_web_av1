@@ -10,27 +10,37 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>   
-</head>
+  </head>
+
+  <script>
+    msg(){
+      var var1 = "Elly";
+
+      alert(resultado);
+    }
+  </script>
 <body>
-    <!--NavBar-->
+  <form>
+    <label for="t1">Insira dados</label>
+    <input id="t1" type="text">
+    <button id="btn1">ENVIAR</button>
+  </form>
+
+  <!--NavBar-->
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="img/logo_size.jpg" height="40%" width="40%" alt=""></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Entre em contato</a></li>
       </ul>
-
      <ul class="right hide-on-med-and-down">
         <li><a href="#">Questão 4</a></li>
       </ul>
-
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Questão 2</a></li>
       </ul>
-
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Questão 1</a></li>
       </ul>
-      
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -38,11 +48,76 @@
     </div>
   </nav>
 
-    
+  <div class="row">
+    <form class="col s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Primeiro nome" id="firs_name" type="text" class="validate">
+          <label for="last_name">Primeiro nome</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Último nome</label>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="nota1" type="text" class="validate">
+          <label for="nota1">Nota 1</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="nota2" type="text" class="validate">
+          <label for="nota2">Nota 2</label>
+        </div>
+      </div>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          This is an inline input field:
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <h1>Teste SELECT abaixo</h1>
+
+  <!--Esse é um campo SELECT-->
+  <div class="row">
+    <form class="col s12">
+      <div class="input-field col s12">
+        <select>
+          <option value="1">Opção 1</option>
+          <option value="2">Opção 2</option>
+          <option value="3">Opção 3</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <select>
+    <option value="1">Opção 1</option>
+    <option value="2">Opção 2</option>
+    <option value="3">Opção 3</option>
+  </select>
+
+  <!--Código JQuery para executar o SELECT
+
+  <--Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 </body>
 </html>
